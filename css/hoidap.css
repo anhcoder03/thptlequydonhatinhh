@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins" ,sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin: 0 auto;
+}
+.container-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.banner a img{
+    width: 100%;
+}
+.nav{
+    display: flex;
+    margin-top: -7px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(33, 94, 163);
+}
+.menu-list{
+    display: flex;
+    gap: 40px;
+}
+.menu-item{
+    list-style: none;
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    background-color: #166a91;
+    margin-top: 13px;
+    width: 200px;
+    z-index: 2;
+    display: none;
+}
+.dropdown-menu li:hover{
+    background-color: rgb(182, 135, 135);
+    display: block;
+}
+.dropdown-menu li{
+    border-bottom: 1px solid aqua;
+    line-height: 40px;
+    padding-left: 5px;
+    box-shadow: 0 0 10px gray;
+}
+.menu-item-dropdown{
+    list-style: none;
+}
+.menu-item-dropdown .menu-link-dropdown{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 13px;
+}
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 2rem;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 11px solid #fff;
+    transform: translateY(-100%);
+}
+.chimcut::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    margin-top: -13px;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+.menu-item:hover .dropdown-menu{
+    display: block;
+}
+.menu-item .menu-link{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 500;
+}
+.menu-item .menu-link:hover{
+    padding-bottom: 5px;
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+.form-search-input{
+    padding:7px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.form-search-input:focus{
+    box-shadow: 0 0 5px aqua;
+}
+.form-search-btn{
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.form-search-btn:hover{
+    background-color: aqua;
+}
+
+/* Chữ chạy */
+
+.container-chuchay{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.time p{
+    font-size: 16px;
+    color: #666;
+    padding: 0 50px;
+}
+.container-chuchay .hello{
+    margin-top: 6px;
+    width: 75%;
+}
+.container-chuchay .hello marquee{
+    color: rgb(33, 94, 163);
+    font-weight: bold;
+    font-size: 15px;
+}
+/* content */
+.row{
+    display: flex;
+    gap: 10px;
+}
+.content-main{
+    width: 70%;
+}
+.phanhoidap{
+    margin-top: 20px;
+    background-color: #d9edf7;
+    border-radius: 5px;
+}
+.content-top{
+    padding: 20px 30px;
+    border-bottom: 1px solid aqua;
+}
+.content-top .loichao{
+    font-weight: 600;
+    color: #166a91;
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+}
+.content-top p{
+    color: rgb(47, 63, 114);
+}
+.content-top .loicamon{
+    font-weight: 600;
+    color: #166a91;
+    font-size: 16px;
+    display: flex;
+    justify-content: end;
+}
+.search-hoidap{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.btn-left button{
+    border: none;
+    height: 40px;
+    padding: 0 10px;
+    background-color: rgb(33, 233, 33);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btn-left button:hover{
+    cursor: pointer;
+    background-color: rgb(107, 207, 107);
+}
+.timkiem{
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.timkiem:focus{
+    border: 1px solid rgb(49, 189, 49);
+    box-shadow: 0 0 4px rgb(107, 207, 107);
+}
+.btn-timkiem{
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(33, 233, 33);
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0 5px 5px 0px;
+    padding: 0 10px;
+    margin-left: -10px;
+}
+
+
+
+/* Chính phủ điện tử
+ */
+.content-right{
+    width: 30%;
+}
+.tieude{
+    margin-top: 20px;
+    background-color: rgb(33, 94, 163);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+.tieude h3{
+    color: #fff;
+}
+.panel-body{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(33, 94, 163);
+}
+.nav-item{
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border: 1px solid rgb(33, 94, 163);
+    list-style: none;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(rgb(33, 94, 163), rgb(132, 173, 221));
+
+}
+.nav-item:hover{
+    background: rgb(82, 142, 211);
+}
+.nav-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-item:hover img{
+    margin-left: 30px;
+    transition: all .2s linear;
+}
+.nav-item a img{
+    margin: 0 10px;
+}
+.img-tranghocsinh,
+.img-tracuudiem{
+    border-top: 2px solid rgb(33, 94, 163);
+    padding-top: 20px;
+    margin-top: 20px;
+    min-width: 355px;
+}
+.img-tranghocsinh img{
+    width: 100%;
+}
+.img-tracuudiem img{
+    width: 100%;
+}
+.thongtinthem{
+    gap: 30px;
+}
+.thongtinthem .danhsach li{
+    color: rgb(33, 94, 163);
+}
+.thongtinthem .danhsach li a{
+    text-decoration: none;
+}
+.thongtinthem .danhsach li a:hover{
+    text-decoration: underline;
+}
+
+.container-full-width{
+    background-color: rgb(132, 173, 221);
+}
+.content-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -6px;
+    padding: 20px 20px;
+    display: flex;
+    gap: 10em;
+}
+.list-footer span,
+.thongtin span{
+    display: block;
+    padding: 10px 0;
+}
+.list-footer p,
+.thongtin p{
+    padding: 3px 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.info-design{
+    display: flex;
+    justify-content: center;
+    margin-top: -6px;
+    padding: 5px 0;
+    background-color: rgb(132, 173, 221);
+    color: #f3f3f3;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}
+.back-to-top a{
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #166a91;
+    font-size: 20px;
+    color: #fff;
+}
+.back-to-top a:hover{
+    background-color: rgb(21, 78, 78);
+}

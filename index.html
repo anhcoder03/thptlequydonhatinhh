@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <header>
+        <div class="container1 container">
+            <div class="banner">
+                <a href="#"><img src="./img/Banner.gif" alt=""></a>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="./index.html" class="menu-link" style="color: aqua;"><i
+                                    class="fas fa-home"></i></a></li>
+                        <li class="menu-item">
+                            <a href="./gioithieu.html" class="menu-link">Giới thiệu</a>
+                            <ul class="dropdown-menu">
+                                <div class="chimcut"></div>
+                                <li class="menu-item-dropdown"><a href="./gioithieu.html" class="menu-link-dropdown">Truyền thống nhà trường</a></li>
+                                <li class="menu-item-dropdown"><a href="#" class="menu-link-dropdown">Cơ cấu tổ chức</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="./lienhe.html" class="menu-link">Liên hệ</a></li>
+                        <li class="menu-item"><a href="./gopy.html" class="menu-link">Góp ý</a></li>
+                        <li class="menu-item"><a href="./hoidap.html" class="menu-link">Hỏi & Đáp</a></li>
+                    </ul>
+                </div>
+                <div class="form-search">
+                    <input type="text" placeholder="Search..." class="form-search-input">
+                    <input type="submit" value="Tìm kiếm" class="form-search-btn">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Chữ chạy -->   
+    <div class="chu-chay">
+        <div class="container">
+            <div class="container-chuchay">
+                <div class="time">
+                    <p id="gio"></p>
+                    <script>
+                        var today = new Date();
+                        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                        var dateTime = date+' '+time;
+                     
+                        document.getElementById("gio").innerHTML = dateTime;
+                     </script>
+                </div>
+                <div class="hello">
+                    <marquee behavior="" direction="">CHÀO MỪNG ĐẾN VỚI TRANG THÔNG TIN ĐIỆN TỬ CỦA TRƯỜNG
+                        THPT LÊ QUÝ ĐÔN - HÀ TĨNH</marquee>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <div class="container">
+            <hr>
+            <div class="container-content">
+                <div class="content-left">
+                    <div class="tieude">
+                        <h3 class="title-content-right">THÔNG BÁO</h3>
+                    </div>
+                    <div class="row">
+                        <a href="#"><img src="./img/tintuc.jpg" width="100%" height="200PX" alt=""></a>
+                        <h4 class="heading"><a href="#">TRƯỜNG THPT LÊ QUÝ ĐÔN VINH DANH HỌC SINH NGUYỄN PHI ANH ĐẠT GIẢI NHẤT CUỘC THI HỌC SINH GIỎI.</a>
+                        </h4>
+                        <span><i class="far fa-calendar-alt"></i> Ngày đăng: 19/1/2022</span>
+                        <p> Nhằm khích lệ sự nỗ lực phấn đấu của học sinh, ngày 07/01/2022 trường THPT Lê Quý
+                            Đôn đã tổ chức lễ Vinh danh học sinh xuất sắc trong học tập.</p>
+                    </div>
+                </div>
+                <div class="content-center">
+                    <div class="tieude">
+                        <h3 class="title-content-right">TIN TỨC & SỰ KIỆN</h3>
+                    </div>
+                    <div class="news">
+                        <div class="image-new">
+                            <img src="./img/tintuc1.jpg"
+                                alt="">
+                        </div>
+                        <div class="title-new">
+                            <h5><a href="#">TRƯỜNG THPT LÊ QUÝ ĐÔN VINH DANH HỌC SINH XUẤT SẮC .</a></h5>
+                            <span><i class="far fa-calendar-alt"></i> Ngày đăng: 19/1/2022</span>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="image-new">
+                            <img src="./img/tintuc2.jpg"
+                                alt="">
+                        </div>
+                        <div class="title-new">
+                            <h5><a href="#">TRƯỜNG THPT LÊ QUÝ ĐÔN TỔ CHỨC THÀNH CÔNG HỘI NGHỊ  VIÊN CHỨC VÀ NGƯỜI LAO ĐỘNG  </a></h5>
+                            <span><i class="far fa-calendar-alt"></i> Ngày đăng: 19/9/2022</span>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="image-new">
+                            <img src="./img/tintuc3.jpg"
+                                alt="">
+                        </div>
+                        <div class="title-new">
+                            <h5><a href="#">LỄ TỔNG KẾT HOẠT ĐỘNG TÌNH NGUYỆN, CHIẾN DỊCH HOA PHƯỢNG ĐỎ.</a></h5>
+                            <span><i class="far fa-calendar-alt"></i> Ngày đăng: 19/1/2022</span>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="image-new">
+                            <img src="./img/tintuc2.jpg"
+                                alt="">
+                        </div>
+                        <div class="title-new">
+                            <h5><a href="#">TRƯỜNG THPT LÊ QUÝ ĐÔN VINH DANH HỌC SINH XUẤT SẮC .</a></h5>
+                            <span><i class="far fa-calendar-alt"></i> Ngày đăng: 19/1/2022</span>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="image-new">
+                            <img src="./img/tintuc1.jpg"
+                                alt="">
+                        </div>
+                        <div class="title-new">
+                            <h5><a href="#">TRƯỜNG THPT LÊ QUÝ ĐÔN VINH DANH HỌC SINH XUẤT SẮC .</a></h5>
+                            <span><i class="far fa-calendar-alt"></i> Ngày đăng: 19/1/2022</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="content-right">
+                    <div class="tieude">
+                        <h3 class="title-content-right">CHÍNH PHỦ ĐIỆN TỬ</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt1.png"
+                                        width="10%" alt=""> Hệ Thống Quản Lý Văn Bản</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt2.png"
+                                        width="10%" alt=""> HỆ THỐNG EMAIL CÔNG VỤ</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt3.png"
+                                        width="10%" alt=""> DỊCH VỤ CÔNG TRỰC TUYẾN</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt4.png"
+                                        width="10%" alt=""> HỆ THỐNG EMAIL GIÁO DỤC</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt5.png"
+                                        width="10%" alt=""> HỆ THỐNG QUẢN LÝ TRƯỜNG HỌC</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt6.png"
+                                        width="10%" alt=""> HỆ THỐNG TRƯỜNG HỌC KẾT NỐI</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt7.png"
+                                        width="10%" alt=""> K12ONLINE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slide -->
+    <div class="slide">
+        <div class="container">
+            <div class="container-content">
+
+                <div class="container-slide">
+                    <div class="slide1">
+                        <img src="./img/slide.png" alt="">
+                    </div>
+                    <div class="slide2">
+                        <img src="./img/tra-cuu-ket-qua.gif"
+                            alt="">
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content2 -->
+    <div class="content2">
+        <div class="container">
+            <div class="container-content">
+
+                <div class="container-content2">
+                    <div class="van-ban-moi">
+                        <div class="title-van-ban">
+                            <h3><img src="./img/loa.png" alt="">Văn Bản Mới</h3>
+                        </div>
+                        <div class="content-van-ban">
+                                <div class="content-item">
+                                    <span>Tên: <a href="#"> (Thông tư 30/2009 về Chuẩn nghề nghiệp giáo
+                                            viên)</a></span>
+                                    <p>Ngày ban hành: (15/03/2018)</p>
+                                </div>
+                                <div class="content-item">
+                                    <span>Tên: <a href="#"> (Thông tư 30/2009 về Chuẩn nghề nghiệp giáo
+                                            viên)</a></span>
+                                    <p>Ngày ban hành: (15/03/2018)</p>
+                                </div>
+                                <div class="content-item">
+                                    <span>Tên: <a href="#"> (Thông tư 30/2009 về Chuẩn nghề nghiệp giáo
+                                            viên)</a></span>
+                                    <p>Ngày ban hành: (15/03/2018)</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="thong-bao">
+                        <div class="title-thong-bao">
+                            <h3>
+                                <img src="./img/loa.png" alt="">THÔNG BÁO - LỊCH CÔNG TÁC
+                            </h3>
+                        </div>
+                        <div class="content-thong-bao">
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> Chương trình ngày hội thanh niên năm 2018</a>
+                                </li>
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> Chương trình ngày hội thanh niên năm 2018</a>
+                                </li>
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> Chương trình ngày hội thanh niên năm 2018</a>
+                                </li>
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> Chương trình ngày hội thanh niên năm 2018</a>
+                                </li>
+                        </div>
+                    </div>
+                    <div class="tkb">
+                        <div class="title-tkb">
+                            <h3>
+                                <img src="./img/loa.png" alt="">THỜI KHÓA BIỂU
+                            </h3>
+                        </div>
+                        <div class="content-tkb">
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> Thời khóa biểu số 6_ Áp dụng từ 14/01/2019</a>
+                                </li>
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> THỜI KHÓA BIỂU SỐ 10 ( ÁP DỤNG CHO KHỐI 12)</a>
+                                </li>
+                                <li class="list-content">
+                                    <a href="#"><i class="fas fa-angle-right"></i> THỜI KHÓA BIỂU SỐ 9 (ONLINE)</a>
+                                </li>
+                                <li class="list-content">
+                                    <a href="#"> <i class="fas fa-angle-right"></i>Thời khóa biểu số 6_ Áp dụng từ 14/01/2019</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-end">
+        <div class="container">
+            <div class="container-slide-end">
+                <img src="./img/day-tot-02.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="container-full-width">
+
+                <div class="content-footer">
+                        <div class="list-footer">
+                            <h4>TRƯỜNG THPT LÊ QUÝ ĐÔN</h4>
+                            <span>CHỊU TRÁCH NHIỆM NỘI DUNG</span>
+                            <p>Ban biên tập Trang thông tin điện tử Trường THPT LÊ QUÝ ĐÔN</p>
+                            <P>Giấy phép số .../GPTTĐT-STTTT do Sở TT&TT cấp ngày ....</P>
+                        </div>
+                        <div class="thongtin">
+                            <h4>LIÊN HỆ</h4>
+                            <span>TRƯỜNG THPT LÊ QUÝ ĐÔN</span>
+                            <p><i class="fas fa-phone-square-alt"></i> Điện thoại</p>
+                            <p><i class="fas fa-envelope"></i> Email: anhnppd06356@fpt.edu.vn</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Vĩnh Cát - Lưu Vĩnh Sơn - Thạch Hà - Hà Tĩnh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="menu-footer">
+                <div class="nav">
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="index.html" class="menu-link"><i
+                                        class="fas fa-home"></i></a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Giới thiệu</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Liên hệ</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Góp ý</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Hỏi & Đáp</a></li>
+                        </ul>
+                    </div>
+                    <div class="form-search">
+                        <input type="text" placeholder="Search..." class="form-search-input">
+                        <input type="submit" value="Tìm kiếm" class="form-search-btn">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="info-design">
+                <span>Thiết kế và xây dựng bởi Nguyễn Phi Anh</span>
+            </div>
+            <div class="back-to-top">
+                <a href="#top"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://uhchat.net/code.php?f=2116c5"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hoidap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Hỏi đáp</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <header>
+        <div class="container1 container">
+            <div class="banner">
+                <a href="#"><img src="./img/Banner.gif" alt=""></a>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="./index.html" class="menu-link"><i
+                                    class="fas fa-home"></i></a></li>
+                        <li class="menu-item">
+                            <a href="./gioithieu.html" class="menu-link">Giới thiệu</a>
+                            <ul class="dropdown-menu">
+                                <div class="chimcut"></div>
+                                <li class="menu-item-dropdown"><a href="./gioithieu.html" class="menu-link-dropdown">Truyền thống nhà trường</a></li>
+                                <li class="menu-item-dropdown"><a href="#" class="menu-link-dropdown">Cơ cấu tổ chức</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="./lienhe.html" class="menu-link">Liên hệ</a></li>
+                        <li class="menu-item"><a href="./gopy.html" class="menu-link">Góp ý</a></li>
+                        <li class="menu-item"><a href="./hoidap.html" class="menu-link"
+                                style="color: aqua;">Hỏi & Đáp</a></li>
+                    </ul>
+                </div>
+                <div class="form-search">
+                    <input type="text" placeholder="Search..." class="form-search-input">
+                    <input type="submit" value="Tìm kiếm" class="form-search-btn">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Chữ chạy -->
+    <div class="chu-chay">
+        <div class="container">
+            <div class="container-chuchay">
+                <div class="time">
+                    <p id="gio"></p>
+                    <script>
+                        var today = new Date();
+                        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                        var dateTime = date+' '+time;
+                     
+                        document.getElementById("gio").innerHTML = dateTime;
+                     </script>
+            </div>
+                <div class="hello">
+                    <marquee behavior="" direction="">CHÀO MỪNG ĐẾN VỚI TRANG THÔNG TIN ĐIỆN TỬ CỦA TRƯỜNG
+                        THPT LÊ QUÝ ĐÔN - HÀ TĨNH</marquee>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <div class="container">
+            <hr>
+            <div class="container-content">
+                <div class="row">
+                    <div class="content-main">
+                        <div class="phanhoidap">
+                            <div class="content-top">
+                                <span class="loichao">Quý bạn đọc thân mến</span>
+                                <p>Để thuận tiện cho việc tiếp nhận các câu hỏi của đông đảo bạn đọc gửi tới
+                                    Trường, Ban biên tập xây dựng Diễn đàn Hỏi đáp.</p>
+                                <p>Để gửi câu hỏi, Bạn đọc vui lòng bấm nút Gửi thông tin hỏi đáp, điền đầy đủ và
+                                    chính xác các thông tin (tiêu đề, người gửi, email…) vào các ô theo mẫu hướng
+                                    dẫn. Nội dung hỏi đáp và các thông tin cá nhân phải sử dụng tiếng Việt có dấu.
+                                </p>
+                                <p>Các câu hỏi không đáp ứng được các yêu cầu nêu trên sẽ không được nhà trường
+                                    giải đáp. Đối với những câu hỏi hợp lệ, chúng tôi sẽ chuyển trực tiếp tới Ban
+                                    Biên tập để nghiên cứu, xem xét và có phản hồi trong thời gian sớm nhất. Nội
+                                    dung phản hồi sẽ được gửi đến hộp thư của quý bạn đọc hoặc đăng tải trên
+                                    chuyên mục này.</p>
+                                <span class="loicamon">Xin trân trọng cảm ơn sự quan tâm, ủng hộ của Quý Bạn đọc!</span>
+                            </div>
+                            <div class="search-hoidap">
+                                <div class="btn-left">
+                                    <button>Gửi thông tin hỏi đáp</button>
+                                </div>
+                                <div class="search-right">
+                                    <input class="timkiem" type="text" placeholder="Tìm kiếm Hỏi/Đáp...">
+                                    <input class="btn-timkiem" type="submit" value="Tìm kiếm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="tieude">
+                            <h3 class="title-content-right">CHÍNH PHỦ ĐIỆN TỬ</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#">
+                                    <img src="./img/tt1.png"
+                                        width="10%" alt=""> Hệ Thống Quản Lý Văn Bản</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt2.png"
+                                        width="10%" alt=""> HỆ THỐNG EMAIL CÔNG VỤ</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt3.png"
+                                        width="10%" alt=""> DỊCH VỤ CÔNG TRỰC TUYẾN</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt4.png"
+                                        width="10%" alt=""> HỆ THỐNG EMAIL GIÁO DỤC</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt5.png"
+                                        width="10%" alt=""> HỆ THỐNG QUẢN LÝ TRƯỜNG HỌC</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt6.png"
+                                        width="10%" alt=""> HỆ THỐNG TRƯỜNG HỌC KẾT NỐI</a></li>
+                            <li class="nav-item"><a href="#">
+                                    <img src="./img/tt7.png"
+                                        width="10%" alt=""> K12ONLINE</a>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="img-tranghocsinh">
+                            <img src="http://lequydonhatinh.edu.vn/upload/19083/20170716/trang-tin-hoc-sinh.gif"
+                                alt="">
+                        </div>
+                        <div class="img-tracuudiem">
+                            <img src="./img/tra-cuu-ket-qua.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="container-full-width">
+
+                <div class="content-footer">
+                    <div class="list-footer">
+                        <h4>TRƯỜNG THPT LÊ QUÝ ĐÔN</h4>
+                        <span>CHỊU TRÁCH NHIỆM NỘI DUNG</span>
+                        <p>Ban biên tập Trang thông tin điện tử Trường THPT LÊ QUÝ ĐÔN</p>
+                        <P>Giấy phép số .../GPTTĐT-STTTT do Sở TT&TT cấp ngày ....</P>
+                    </div>
+                    <div class="thongtin">
+                        <h4>LIÊN HỆ</h4>
+                        <span>TRƯỜNG THPT LÊ QUÝ ĐÔN</span>
+                        <p><i class="fas fa-phone-square-alt"></i> Điện thoại</p>
+                        <p><i class="fas fa-envelope"></i> Email: anhnppd06356@fpt.edu.vn</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Vĩnh Cát - Lưu Vĩnh Sơn - Thạch Hà -
+                            Hà Tĩnh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="menu-footer">
+            <div class="nav">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="index.html" class="menu-link"><i
+                                    class="fas fa-home"></i></a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Giới thiệu</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Liên hệ</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Góp ý</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Hỏi & Đáp</a></li>
+                    </ul>
+                </div>
+                <div class="form-search">
+                    <input type="text" placeholder="Search..." class="form-search-input">
+                    <input type="submit" value="Tìm kiếm" class="form-search-btn">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="info-design">
+            <span>Thiết kế và xây dựng bởi Nguyễn Phi Anh</span>
+        </div>
+        <div class="back-to-top">
+            <a href="#top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </div>
+    </div>
+    <script src="https://uhchat.net/code.php?f=2116c5"></script>
+
+</body>
+
+</html>
